@@ -10,7 +10,7 @@ files = {
     'file': open('myfile.csv', 'rb')
 }
 url = 'https://httpbin.org/post'
-r = requests.post(url,files=files,data=payload)
+r = requests.post(url)
 assert r.status_code == 200
 
 cookie_url ='https://httpbin.org/cookies'
