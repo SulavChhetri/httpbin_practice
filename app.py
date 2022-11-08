@@ -1,14 +1,7 @@
 import requests
 import json
 
-payload = {
-    'name': 'Sulav',
-    'surname': 'Thapa'
-}
 
-files = {
-    'file': open('myfile.csv', 'rb')
-}
 url = 'https://httpbin.org/post'
 r = requests.post(url)
 assert r.status_code == 200
